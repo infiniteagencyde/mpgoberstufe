@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zeitungs",
+  "info": {
+    "singularName": "zeitung",
+    "pluralName": "zeitungs",
+    "displayName": "Zeitung"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string",
+      "required": true,
+      "maxLength": 65
+    },
+    "Beschreibung": {
+      "type": "text",
+      "required": true,
+      "maxLength": 175
+    },
+    "Artikel": {
+      "type": "richtext",
+      "required": true
+    },
+    "Bild": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Titel",
+      "required": true
+    }
+  }
+}

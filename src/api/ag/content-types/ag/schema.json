@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ags",
+  "info": {
+    "singularName": "ag",
+    "pluralName": "ags",
+    "displayName": "AGs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Beschreibung": {
+      "type": "string",
+      "required": true,
+      "maxLength": 72
+    },
+    "Seiteninhalt": {
+      "type": "richtext",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "termine",
+  "info": {
+    "singularName": "termin",
+    "pluralName": "termine",
+    "displayName": "Termine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Bezeichnung": {
+      "type": "string",
+      "required": true,
+      "maxLength": 72
+    },
+    "Inhalt": {
+      "type": "richtext",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Bezeichnung",
+      "required": true
+    },
+    "Datum": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}

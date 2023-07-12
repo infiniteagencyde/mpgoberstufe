@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "autoren",
+  "info": {
+    "singularName": "autor",
+    "pluralName": "autoren",
+    "displayName": "Autor"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Klasse": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Bild": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

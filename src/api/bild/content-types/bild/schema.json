@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bilder",
+  "info": {
+    "singularName": "bild",
+    "pluralName": "bilder",
+    "displayName": "Gallerie"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Beschreibung": {
+      "type": "string",
+      "required": true,
+      "maxLength": 165
+    },
+    "Bild": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Autor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::autor.autor"
+    }
+  }
+}
